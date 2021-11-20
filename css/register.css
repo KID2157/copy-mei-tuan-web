@@ -1,0 +1,143 @@
+.nav{
+    height:100px;
+
+}
+.nav-center{    
+    height: 100px;
+}
+.nav-center-left{
+    font-size:0px;
+}
+.nav-center-left h1 a img{	
+	width:126px;
+	height:46px;
+    padding:25px 0px 25px 40px;
+}
+.nav-center-right{
+    width:150px;
+	height:20px;
+    line-height: 20px;
+    color: #666;
+    margin-top:40px;
+}
+.nav-center-right a{   
+    width:44px;
+    height:20px;
+    background-color:#FFD000 ;
+    color: #000;
+    display:inline-block;
+    float:right;
+    text-align: center;
+}
+
+.register{
+    width:100%;
+    height:550px;
+    background-color: #F7F8F8;
+
+
+}
+.register-center{
+    width: 1190px;
+    height:480px;
+    background-color: #fff;
+    margin:0 auto;
+    border:1px solid #ccc;
+
+}
+.register-center-form{
+    width: 550px;
+    height:480px;
+    /* background-color: red; */
+    /* border:1px solid #ccc; */
+    margin-left:70px;
+    float: left;
+}
+.register-center-form input{
+    width: 260px;
+    height:36px;
+    border:1px solid #aaa;
+    margin:20px 10px;
+}   
+.register-center-form button{
+    width: 180px;
+    height:20px;
+    border:1px solid #aaa;
+    margin-left:78px;
+}  
+#frmContact{
+    width: 180px;
+    height:40px;
+    margin-left:78px;
+    border:1px solid #FFBE00;
+    background-color: #FFBE00;
+    color: #222;
+    font-size:16px;
+    font-weight: 600;
+    margin-bottom:0px;
+}
+.register-center-img{
+    width: 550px;
+    height:480px;
+    /* background-color: blue; */
+    /* border:1px solid #ccc; */
+    float: left;
+}
+.register-center-img img{
+    margin:100px 90px;
+}
+.register-center-form a{ 
+    color: #FE8C00;
+    text-decoration: none;
+    font-size:13px;
+    padding-left: 78px;
+}
+.register-center-form a:last-child{   
+    padding-left: 0px;
+}
+/*字体图标的颜色改变*/
+.icon-times-circle{
+	color:red;
+}
+.icon-check-circle{
+	color:green;
+}
+/*禁用谷歌的默认选择效果*/
+input,textarea:focus {   
+    outline: none;   
+}  
+/*控制提示文字的显示隐藏*/
+.display-none{
+	display:none;
+}
+.display-block{	
+	display:block;
+}
+.display-inline{
+	display:inline-block;
+}
+#tips{	
+	font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    width: 260px;
+    border-right: 2px solid #fff;
+    color: #fff;
+    text-align: center;
+    background: #EEEEEE;
+    margin-left:80px;
+}
+#tips b {
+    float: left;
+    width: 63px;
+    height: 20px;
+    color: white;
+    background: #EEEEEE;
+    margin-right: 2px;
+    line-height: 20px;
+    text-align: center;
+    
+}
+#frmContact:hover{	
+	cursor:pointer;
+}
