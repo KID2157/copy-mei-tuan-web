@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>城市列表页</title>
+    <meta name="description" content="北京美团网精选北京美食餐厅,酒店预订,电影票,旅游景点,外卖订餐,北京团购信息,您可查询商家评价店铺信息。北京生活,下载美团官方APP ,吃喝玩乐1折起。">
+	<meta name="keywords" content="北京美食,北京酒店,北京团购">
+	<!-- title前面的小图标 -->
+	<link rel="icon" type="image/icon" href="favicon.ico">
+    <!-- 字体图标 -->
+	<link rel="stylesheet" type="text/css" href="./font/icomoon/style.css">
+	<!-- 基础样式 -->
+	<link rel="stylesheet" type="text/css" href="./css/base.css">
+    <!-- 头部公共文件样式 -->
+	<link rel="stylesheet" type="text/css" href="./css/com_header.css">
+	<!-- city页面样式 -->
+	<link rel="stylesheet" type="text/css" href="./css/city.css">
+	<!-- 底部公共样式 -->
+	<link rel="stylesheet" type="text/css" href="./css/com_footer.css">
+    
+</head>
+<body>
+<!-- 头部导航条 -->
+    <div class="nav">
+        <div class="nav-center">
+            <!-- 导航条左侧 位置登录注册 -->
+            <div class="nav-center-left">
+                <!-- 字体图标类名的使用 -->
+                <span class="icon-location"></span>
+                <a href="#">
+                    北京
+                </a>
+                <a href="./city.html">切换城市</a>
+                <a href="#">
+                    [门头沟区 大厂回族 自治县廊坊]
+                </a>
+                <a href="./login.html">
+                    登录
+                </a>
+                <a href="./register.html">注册</a>
+            </div>
+            <!-- 导航条右侧 我的美团 手机APP 商家中心 美团规则 网站导航 -->
+            <div class="nav-center-right">
+                <ul id="dropdown">
+                    <li>
+                        <a href="#" id="myconts">我的美团</a>
+                        <dl class="displaynone mygroup">
+                            <dd>
+                                <a href="#">我的订单</a>
+                            </dd>
+                            <dd>
+                                <a href="#">我的收藏</a>
+                            </dd>
+                            <dd>
+                                <a href="#">抵用券</a>
+                            </dd>
+                            <dd>
+                                <a href="#">账户设置</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <a href="#" class="myconts">手机APP</a>
+                        <dl></dl>
+                    </li>
+                    <li>
+                        <a href="#" id="scenter">商家中心</a>
+                        <dl class="displaynone store-center">
+                            <dd>
+                                <a href="#">美团餐饮商户中心</a>
+                            </dd>
+                            <dd>
+                                <a href="#">登录商家中心</a>
+                            </dd>
+                            <dd>
+                                <a href="#">美团智能收银</a>
+                            </dd>
+                            <dd>
+                                <a href="#">我想合作</a>
+                            </dd>
+                            <dd>
+                                <a href="#">手机免费开店</a>
+                            </dd>
+                            <dd>
+                                <a href="#">到店综合业务招募</a>
+                            </dd>
+                            <dd>
+                                <a href="#">餐饮合作社招募</a>
+                            </dd>
+                            <dd>
+                                <a href="#">商家申请开票</a>
+                            </dd>
+                            <dd>
+                                <a href="#">免费合作美团排队</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <a href="#" id="grouprule">美团规则</a>
+                        <dl class="displaynone rulecenter">
+                            <dd>
+                                <a href="#">规则中心</a>
+                            </dd>
+                            <dd>
+                                <a href="#">规则目录</a>
+                            </dd>
+                            <dd>
+                                <a href="#">规则评议院</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <a href="#" id="groupnav">网站导航</a>
+                        <dl class="displaynone groupnavlist">
+                            <dd>
+                                <div>
+                                    <a href="#">酒店旅游</a>
+                                </div>
+                                <span>国际机票</span>
+                                <span>火车票</span>
+                                <span>民宿</span>
+                                <span>经济型酒店</span>
+                                <span>主题酒店</span>
+                                <span>商务酒店</span>
+                                <span>公寓</span>
+                                <span>豪华酒店</span>
+                                <span>客栈</span>
+                                <span>青年旅社</span>
+                                <span>度假酒店</span>
+                                <span>别墅</span>
+                                <span>农家院</span>
+                            </dd>
+                            <dd>
+                                <div>
+                                    <a href="#">吃美食</a>
+                                </div>
+                                <span>烤鱼</span>
+                                <span>特色小吃</span>
+                                <span>烧烤</span>
+                                <span>自助餐</span>
+                                <span>火锅</span>
+                                <span>代金券</span>
+                            </dd>
+                            <dd>
+                                <div>
+                                    <a href="#">看电影</a>
+                                </div>  
+                                <span>热映电影</span>
+                                <span>热门影院</span>
+                                <span>热映电影口碑榜</span>
+                                <span>最受期待电影</span>
+                                <span>国内票房榜</span>
+                                <span>北美票房榜</span>
+                                <span>电影排行榜</span>
+                            </dd>
+                            <dd>
+                                <div>
+                                    <a href="#">手机应用</a>
+                                </div>
+                                <span>
+                                    <img src="./images/meituan.png" alt="美团"/>
+                                </span>
+                                <span>
+                                    <img src="./images/waimai.png" alt="美团"/>
+                                </span>
+                                <span>
+                                    <img src="./images/162c3308d9622f6d9cfaa49e60be4dca8573.png" alt="美团"/>
+                                </span>
+                                <span>
+                                    <img src="./images/dianping.png" alt="美团"/>
+                                </span>
+                                <span>
+                                    <img src="./images/maoyan.png" alt="美团"/>
+                                </span>
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+	<!-- 搜索区域 -->
+	<div class="header">
+		<div class="header-center">
+			<!-- logo区域 -->
+			<div class="header-center-left">
+				<h1>
+					<a href="index.html" title="美团购">
+						<img src="./images/logo.png" />美团购
+					</a>
+				</h1>
+			</div>
+			<!-- 搜索区域 -->
+			<div class="header-center-center">
+				<input type="text" placeholder="搜索商家或地点">
+				<button>
+					<span class="icon-search"></span>
+				</button>
+			</div>
+		</div>
+	</div>
+<!-- 三级联动下拉菜单 -->
+<div class="city">
+    <div class="city-center">
+        <!-- 实现方式 -->
+        <div class="wayone">
+                地区选择:
+            <div class="wayone-form">
+                <form action="#">
+                    <label for="addr-show">您选择的是：
+                        <input type="text" value="" id="addr-show">
+                    </label>
+                    <!--省份选择-->
+                    <select id="prov" onchange="showCity(this)">
+                        <option value="">请选择省份</option>
+                    </select>
+                    <!--城市选择-->
+                    <select id="city" onchange="showCountry(this)">
+                        <option value="">请选择城市</option>
+                    </select>
+                    <!--县区选择-->
+                    <select id="country" onchange="selecCountry(this)">
+                        <option value="">请选择县区</option>
+                    </select>
+                    <button type="button" class="btn met1" onClick="showAddr()">确定</button>
+                    <button type="button" id="cityto">提交</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 底部链接-->
+<div class="footer">
+    <div class="footer-center">
+        <div class="footer-center-content">
+            <ul>
+                <b>用户帮助</b>
+                <li>申请退款</li>
+                <li>常见问题</li>
+                <li>用户协议</li>
+                <li>隐私政策</li>
+                <li>反诈骗公告</li>
+                <li>消费者权益保障</li>
+            </ul>
+        </div>
+        <div class="footer-center-content">
+            <ul>
+                <b>商家合作</b>
+                <li>美食商家入驻(非外卖)</li>
+                <li>美团外卖开店</li>
+                <li>美团收银官网</li>
+                <li>美团配送合作申请</li>
+                <li>美团餐饮学院</li>
+                <li>酒店商家入驻</li>
+            </ul>
+        </div>
+        <div class="footer-center-content">
+            <ul>
+                <b>合作商招募</b>
+                <li>美团外卖合作商招募</li>
+                <li>到店餐饮合作商招募</li>
+                <li>到店综合业务合作商招募</li>
+                <li>美团联盟</li>
+                <li>美团收银招募线上分销商</li>
+                <li>美团收银合作商招募</li>
+            </ul>
+        </div>
+        <div class="footer-center-content">
+            <ul>
+                <b>关注美团</b>
+                <li>美团新浪微博</li>
+                <li>常见问题</li>
+                <li>用户协议</li>
+            </ul>
+        </div>
+        <div class="footer-center-content">
+            <ul>
+                <b>消费者服务热线</b>
+                <li>外卖消费者：10109777</li>
+                <li>猫眼消费者：10105335</li>
+                <li>其他消费者：10107888</li>
+            </ul>
+        </div>
+        <div class="footer-center-content">
+            <ul>
+                <b>用户帮助</b>
+                <li>申请退款</li>
+                <li>常见问题</li>
+                <li>用户协议</li>
+                <li>隐私政策</li>
+                <li>反诈骗公告</li>
+                <li>消费者权益保障</li>
+            </ul>
+        </div>
+        <div class="footer-center-content">
+            <ul>
+                <b>美团服务</b>
+                <li>美团外卖</li>
+                <li>美团酒店</li>
+                <li>猫眼电影</li>
+                <li>美团配送</li>
+                <li>美团云</li>
+                <li>大众点评</li>
+            </ul>
+        </div>
+        <div class="footer-center-content">
+            <ul>
+                <b>商家合作</b>
+                <li>境内度假商家入驻</li>
+                <li>综合商家入驻</li>
+                <li>美团民宿房东</li>
+                <li>商家入驻</li>
+                <li>商家开票</li>
+                <li>申请美团智能收银机</li>
+            </ul>
+        </div>
+        <div class="footer-center-content">
+            <ul>
+                <b>美团规则</b>
+                <li>规则中心</li>
+                <li>规则评议院</li>
+                <li>规则目录</li>
+            </ul>
+        </div>
+        <div class="footer-center-content">
+            <ul>
+                <b>投诉举报专区</b>
+                <li>违法和不良信息举报电话：4006018900</li>
+                <li>举报邮箱：tousujubao@meituan.com</li>
+                <li>网上有害信息举报</li>
+                <li>商家自助入驻美团入口</li>
+                <li>供应商注册入口</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <script type="text/javascript">
+        //将获取到的城市列表添加到页面中
+        //获取cityto节点
+        var cityto = document.getElementById('cityto');
+        var addrshow = document.getElementById('addr-show');
+        
+        cityto.onclick=function(){
+            //判断addrshow的值是不是空
+            if(addrshow.value==""){ 
+                alert('请先选择城市信息');
+            }else{  
+                //跳转页面
+                window.location.href = "./index.html?city="+addrshow.value;
+            }
+        }
+    </script>
+    <!-- 联动的城市列表数据 -->
+    <script type="text/javascript" src="./js/city.js"></script>
+    <!-- 三级联动js代码 -->
+    <script type="text/javascript" src="./js/method01.js"></script>
+    <!-- mouse.js 导航条下拉js文件-->
+    <script type="text/javascript" src="./js/dropdown.js"></script>
+</body>
+</html>
