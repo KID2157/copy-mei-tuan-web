@@ -39,7 +39,7 @@ window.onload = function () {
     //初始化准备
     var add = 1;
     var arr = ['http://www.baidu.com', 'http://www.jd.com', 'http://www.taobao.com', 'http://www.suning.com', 'http://www.bilibili.com', 'http://www.aqiyi.com']
-    //添加图片
+    //默认第一张图、第一个小圆点亮、第一个链接
     image.src = "./images/ad01.jpg";
     numList[0].style.background = "#fff";
     links.href = arr[0];
@@ -57,6 +57,7 @@ window.onload = function () {
     }
     //轮播切换图片
     function carouselLb() {
+        //设置定时器，3s换一张图、小圆点样式和链接
         lun = setInterval(function () {
             add = add + 1;
             if (add > 6) {
@@ -109,7 +110,6 @@ window.onload = function () {
     for (var i = 0; i < numList.length; i++) {
         numList[i].onmouseover = function () {
             add = this.innerHTML;
-            //console.log(add);
             image.src = "./images/ad0" + add + ".jpg";
             links.href = arr[add - 1];
             var x = add - 1;
@@ -121,6 +121,7 @@ window.onload = function () {
             }
         }
     }
+
     //猫眼电影特效
 
     //选项卡切换和三角形的显示隐藏
@@ -134,12 +135,14 @@ window.onload = function () {
     var nowhot = document.getElementById("nowhot");
     var quick = document.getElementById("quick");
 
+    //正在热映效果显示隐藏
     movieTabLi[1].onmouseover = function () {
         movieShowClass[0].style.display = "block";
         movieShowClass[1].style.display = "none";
         movieTabTriangle[0].style.display = "block";
         movieTabTriangle[1].style.display = "none";
     }
+    //即将上映效果显示隐藏
     movieTabLi[2].onmouseover = function () {
         movieShowClass[0].style.display = "none";
         movieShowClass[1].style.display = "block";
@@ -226,10 +229,6 @@ window.onload = function () {
             }
             this.className = 'act';
             containerDiv[this.index].style.display = "block"
-        }
-        for (var m = 1; m < hotelTabLi.length; m++) {
-            hotelTabLi[m].className = '';
-            containerDiv[m].style.display = "none";
         }
     }
 }
