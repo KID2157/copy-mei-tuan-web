@@ -73,6 +73,8 @@ loginSubmit.onclick = function () {
         window.location.href = "./index.html?username=" + userName.value;
     }
 }
+
+//显示隐藏密码
 // 获取元素
 var eye = document.getElementById('eye');
 var pwd = document.getElementById('password');
