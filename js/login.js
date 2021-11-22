@@ -17,6 +17,7 @@ function getParamByUrl(url) {
 var str = location.href;
 //调用函数
 var params = getParamByUrl(str);
+
 //判断用户和密码是否匹配
 
 //用户名是否匹配
@@ -30,7 +31,7 @@ userName.onfocus = function () {
 }
 //失去焦点函数
 userName.onblur = function () {
-    //判断重复密码是否正确
+    //判断用户名是否正确
     if (userName.value != params["phone"]) {
         userPass.className = "display-inline icon-times-circle";
         userPass.innerHTML = "手机号码不正确！";
@@ -51,7 +52,7 @@ password.onfocus = function () {
 }
 //失去焦点函数
 password.onblur = function () {
-    //判断重复密码是否正确
+    //判断密码是否正确
     if (password.value != params["pass"]) {
         passTo.className = "display-inline icon-times-circle";
         passTo.innerHTML = "密码不正确！";
@@ -65,7 +66,6 @@ password.onblur = function () {
 
 //点击后提交数据到index.html
 loginSubmit.onclick = function () {
-    //alert(1);
     if (password.value == "" || userName.value == "") {
         alert("请填写信息后登录");
     } else {
