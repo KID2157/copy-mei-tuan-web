@@ -3,11 +3,14 @@ console.log(loginSubmit);
 //获取注册页面传值过来的注册信息
 function getParamByUrl(url) {
     var theRequest = new Object();
+    //方便获取数据
     var index = url.indexOf("?");
     if (index != -1) {
+        //取“？”以后的数据
         var str = url.substr(index + 1);
         strs = str.split("&");
         for (var i = 0; i < strs.length; i++) {
+            //将其分为属性和值并存到对象中
             theRequest[strs[i].split("=")[0]] = (strs[i].split("=")[1]);
         }
     }
